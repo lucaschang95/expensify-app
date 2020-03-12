@@ -6,9 +6,8 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
-
   },
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -26,6 +25,6 @@ module.exports = {
     ]
   },
   plugins: [new MiniCssExtractPlugin({ filename: 'styles.css' })],
-  devtool: 'cheap-source-map'
+  devtool: "inline-source-map"
 };
 
