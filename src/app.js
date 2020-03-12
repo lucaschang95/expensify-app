@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
+import './styles/styles.scss';
+import 'normalize.css'
 
 const store = configureStore();
 
