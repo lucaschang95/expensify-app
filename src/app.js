@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import AppRouter from './routers/AppRouter';
+import configureStore from './store/configureStore';
 
-const TestComp = () => (
-  <div>
-    <h1>Test title</h1>
-    <p>test para</p>
-  </div>
-);
+const store = configureStore();
 
 ReactDOM.render(
-  <TestComp />,
+  <Provider store={store}>
+    <p>provider</p>
+  </Provider>,
   document.querySelector('#app')
 );
-
