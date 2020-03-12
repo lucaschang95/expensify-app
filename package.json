@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:prod": "webpack -p --env production",
     "start": "node server/server.js"
   },
   "keywords": [],
