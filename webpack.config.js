@@ -24,6 +24,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin({ filename: 'styles.css' })]
+  plugins: [new MiniCssExtractPlugin({ filename: 'styles.css' })],
+  devtool: "source-map"
 };
 
